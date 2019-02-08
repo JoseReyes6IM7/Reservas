@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A que Nombre:" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña" />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/cuantasPersonas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Personas: %d" />
+
+    <SeekBar
+        android:id="@+id/personas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Para que Fecha:" />
+
+    <Button
+        android:id="@+id/fecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="dd - MMMM – yyyy" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Para que Hora:" />
+
+    <Button
+        android:id="@+id/hora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HH:mm" />
+
+    <Switch
+        android:id="@+id/mar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Cercano al mar"
+        android:textOff="No"
+        android:textOn="Si" />
+
+    <TextView
+        android:id="@+id/numNoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noches: %d" />
+
+    <SeekBar
+        android:id="@+id/barraNoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/reserva"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="reserva"
+        android:text="Hacer Reservacion" />
+
+</LinearLayout>
